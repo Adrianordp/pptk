@@ -5,13 +5,21 @@ set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_MODULE_PATH
   "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_CURRENT_SOURCE_DIR})
 
-find_package(PythonLibs 2.7 REQUIRED)
-find_package(OpenGL REQUIRED)
+set(Numpy_INCLUDE_DIR /usr/lib/python3/dist-packages/numpy/core/include/numpy/ CACHE STRING "" FORCE)
+set(TBB_INCLUDE_DIR /usr/include/tbb CACHE STRING "" FORCE)
+set(TBB_tbb_LIBRARY /usr/lib/x86_64-linux-gnu/libtbb.so CACHE STRING "" FORCE)
+set(TBB_tbb_RUNTIME /usr/lib/x86_64-linux-gnu/libtbb.so CACHE STRING "" FORCE)
+set(TBB_tbbmalloc_LIBRARY /usr/lib/x86_64-linux-gnu/libtbbmalloc.so CACHE STRING "" FORCE)
+set(TBB_tbbmalloc_RUNTIME /usr/lib/x86_64-linux-gnu/libtbbmalloc.so CACHE STRING "" FORCE)
+set(Eigen_INCLUDE_DIR /usr/include/eigen3 CACHE STRING "" FORCE)
+
 find_package(Numpy REQUIRED)
+find_package(PythonLibs 3 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen REQUIRED)
 find_package(Qt5 CONFIG REQUIRED COMPONENTS Widgets Network OpenGL Core)
 find_package(OpenMP)
+find_package(OpenGL REQUIRED)
 
 # get root Qt5 folder (i.e. contains bin, lib, plugins, etc.)
 get_target_property(Qt5_DIR Qt5::qmake LOCATION)
@@ -45,7 +53,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 include(UsefulMacros)
 
-# following lines specifies the CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS variable
+## following lines specifies the CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS variable
 set(CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP TRUE)
 set(CMAKE_INSTALL_OPENMP_LIBRARIES TRUE)  # requires cmake 3.1
 include(InstallRequiredSystemLibraries)
