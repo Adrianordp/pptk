@@ -11,9 +11,10 @@ int main(int argc, char* argv[]) {
   QApplication a(argc, argv);
   unsigned short clientPort = (unsigned short)atoi(argv[1]);
   Viewer viewer(clientPort);
-  viewer.resize(512, 512);
+  viewer.resize(1, 1);
+//  viewer.setWindowFlags(Qt::FramelessWindowHint);
+//  viewer.setAttribute(Qt::WA_ShowWithoutActivating);
   viewer.create();
   viewer.show();
-
   return a.exec();
 }

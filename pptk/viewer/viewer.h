@@ -78,7 +78,7 @@ class Viewer : public QWindow, protected OpenGLFuncs {
       exit(1);
     }
     connect(_server, SIGNAL(newConnection()), this, SLOT(reply()));
-    qDebug() << "Viewer: TCP server set up on port " << _server->serverPort();
+    qDebug() << "Vizualizador: servidor TCP configurado na porta " << _server->serverPort();
 
     quint16 serverPort = _server->serverPort();
     fwrite(&serverPort, sizeof(quint16), 1, stdout);
@@ -751,13 +751,13 @@ class Viewer : public QWindow, protected OpenGLFuncs {
     // display look-at coordinates
     QVector3D p = _camera.getLookAtPosition();
     QString lookat_text;
-    lookat_text.sprintf("Look-at position: x = %.3f, y = %.3f, z = %.3f",
+    lookat_text.sprintf("Posição de observação: x = %.3f, y = %.3f, z = %.3f",
                         p.x(), p.y(), p.z());
     cursor_y += _text->renderText(cursor_x, cursor_y, lookat_text).height();
 
     // display # points loaded
     QString numpoints_text;
-    numpoints_text.sprintf("%d points loaded", (int)_points->getNumPoints());
+    numpoints_text.sprintf("%d pontos carregados", (int)_points->getNumPoints());
     cursor_y += _text->renderText(cursor_x, cursor_y, numpoints_text).height();
 
     // display # points selected
@@ -796,21 +796,21 @@ class Viewer : public QWindow, protected OpenGLFuncs {
         cursor_y +=
             _text->renderText(cursor_x, cursor_y, selected_text).height();
       }
-      selected_text.sprintf("Selected point:");
+      selected_text.sprintf("Ponto selecionado:");
       _text->renderText(cursor_x, cursor_y, selected_text);
     } else if (num_selected > 1) {
-      selected_text.sprintf("%d points selected", (int)num_selected);
+      selected_text.sprintf("%d pontos selecionados", (int)num_selected);
       _text->renderText(cursor_x, cursor_y, selected_text);
     }
 
     // display grid scale
     cursor_x = pad;
     cursor_y =
-        height() - pad - _text->computeTextSize("log of grid size: ").height();
+        height() - pad - _text->computeTextSize("log do tamanho da grade: ").height();
     QVector4D grid_line_color = _floor_grid->getLineColor();
     int log_grid_size = qRound(qLn(_floor_grid->getCellSize()) / qLn(10.0f));
     cursor_x +=
-        _text->renderText(cursor_x, cursor_y, "log of grid size: ").width();
+        _text->renderText(cursor_x, cursor_y, "log do tamanho da grade: ").width();
     cursor_x +=
         _text
             ->renderText(
@@ -825,14 +825,14 @@ class Viewer : public QWindow, protected OpenGLFuncs {
     QString attr_text;
     int curr_attr = (int)_points->getCurrentAttributeIndex();
     int num_attr = (int)_points->getNumAttributes();
-    attr_text.sprintf("Attribute %d of %d", curr_attr + 1, num_attr);
+    attr_text.sprintf("Atributo %d de %d", curr_attr + 1, num_attr);
     cursor_x = pad;
     cursor_y -= _text->computeTextSize(attr_text).height();
     _text->renderText(cursor_x, cursor_y, attr_text).height();
 
     // display port number
     QString port_text;
-    port_text.sprintf("port %d", _server->serverPort());
+    port_text.sprintf("porta %d", _server->serverPort());
     QSizeF port_text_size = _text->computeTextSize(port_text);
     cursor_x = width() - pad - port_text_size.width();
     cursor_y = height() - pad - port_text_size.height();
