@@ -6,10 +6,6 @@ import os.path
 import shutil
 import platform
 
-from pip._internal import wheel
-
-wheel_tags = wheel.pep425tags.get_supported()[0]
-
 system_type = platform.system()
 
 license_text = b''
@@ -85,5 +81,5 @@ setup(
         'pptk.vfuncs': [make_mod('vfuncs')],
         'pptk.viewer': [make_exe('viewer'), 'qt.conf']},
     options={'bdist_wheel': {
-        'python_tag': wheel_tags[0],
-        'plat_name': wheel_tags[2]}})
+        'python_tag': 'py38',
+        'plat_name': 'any'}})
