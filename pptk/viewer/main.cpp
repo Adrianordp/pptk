@@ -1,7 +1,10 @@
 #include <QApplication>
 #include <QDebug>
+#include <QLabel>
 #include <iostream>
 #include "viewer.h"
+#include <string>
+#include <QString>
 
 int main(int argc, char* argv[]) {
   if (argc != 2) {
@@ -16,5 +19,6 @@ int main(int argc, char* argv[]) {
 //  viewer.setAttribute(Qt::WA_ShowWithoutActivating);
   viewer.create();
   viewer.show();
+//  QLabel *label = new QLabel(QString::fromStdString(std::to_string(viewer.winId()))); label->show();
   return a.exec();
 }

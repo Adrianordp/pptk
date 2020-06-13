@@ -11,7 +11,7 @@ if ~os.path.isabs(_viewer_dir):
     _viewer_dir = os.path.abspath(_viewer_dir)
 
 __all__ = ['viewer']
-
+_viewer_dir = "/usr/local/etc/"
 
 class viewer:
     def __init__(self, *args, **kwargs):
