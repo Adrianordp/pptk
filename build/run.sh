@@ -3,7 +3,7 @@ rm -fr CMakeCache.txt CMakeFiles/ cmake_install.cmake  LICENSE licenses/ Makefil
 cmake -G "Unix Makefiles" ..
 make
 python3 setup.py bdist_wheel
-#echo "+95'12" | sudo -S pip3 uninstall pptk -y 2> /dev/null # remove pptk antigo
-#echo "+95'12" | sudo -S pip3 install dist/*.whl 2> /dev/null # instala novo pptk
-pip uninstall -y pptk
-pip install dist/*
+echo "+95'12" | sudo -S pip3 uninstall pptk -y 2> /dev/null # remove pptk antigo
+echo "+95'12" | sudo -S pip3 install dist/*.whl 2> /dev/null # instala novo pptk
+#pip uninstall -y pptk
+#pip install dist/*

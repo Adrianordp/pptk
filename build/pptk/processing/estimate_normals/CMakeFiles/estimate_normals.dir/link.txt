@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -fopenmp -static-libstdc++ -shared -Wl,-soname,estimate_normals.so -o estimate_normals.so CMakeFiles/estimate_normals.dir/estimate_normals.cpp.o  -ltbb -ltbbmalloc 

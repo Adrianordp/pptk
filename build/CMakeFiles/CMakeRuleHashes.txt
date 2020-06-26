@@ -1,0 +1,21 @@
+# Hashes of file build rules.
+b35380494ba18f60e9ac26525b556dd2 CMakeFiles/LICENSE
+414783029c01b312b8096e64ce3e176f CMakeFiles/setup.py
+5a26b3887caee9cc1c83aca2d9ec7526 pptk/CMakeFiles/pptk.__init__.py
+047ec9a90b2bc14c8a144dbf60786296 pptk/CMakeFiles/pptk._add_path.py
+5a39ad8fafb345c81af5a54e4eea8319 pptk/kdtree/CMakeFiles/pptk.kdtree.__init__.py
+0408b06f5959ad08bbbcb0531834c46f pptk/libs/CMakeFiles/pptk.libs.libgomp.so.1
+95c92582f5f9f668d127c53309b045de pptk/libs/CMakeFiles/pptk.libs.libz.so.1
+96778ddef7fe76c3e3722c5b859f55a0 pptk/libs/qt_plugins/platforms/CMakeFiles/pptk.libs.qt_plugins.platforms.libqxcb.so
+4c635cb439c9f9ffb90da8cfa6802cb5 pptk/libs/qt_plugins/xcbglintegrations/CMakeFiles/pptk.libs.qt_plugins.xcbglintegrations.libqxcb-egl-integration.so
+c90435d3e4f46a71ce372fcc4c66a40c pptk/libs/qt_plugins/xcbglintegrations/CMakeFiles/pptk.libs.qt_plugins.xcbglintegrations.libqxcb-glx-integration.so
+47526dfae9cb534303c899d3bc4211e2 pptk/points/CMakeFiles/pptk.points.__init__.py
+904684251da29301a762e38c1612550b pptk/points/CMakeFiles/pptk.points.expr.py
+c8eda039b443aa8b70644f1e7aea39e3 pptk/points/CMakeFiles/pptk.points.points.py
+efb22814f541f8066a5aae3e30431b0f pptk/processing/CMakeFiles/pptk.processing.__init__.py
+fb2d5d8f57876c5d2f10ab5cc3f7a96d pptk/processing/estimate_normals/CMakeFiles/pptk.processing.estimate_normals.__init__.py
+0770c6b27cca6a5e0fb8bb2a51187b65 pptk/vfuncs/CMakeFiles/pptk.vfuncs.__init__.py
+6e05cb261e28a5be379c3f77a6783dd5 pptk/viewer/CMakeFiles/pptk.viewer.__init__.py
+7cd4d17c622592db0fc694af366d3b4b pptk/viewer/CMakeFiles/pptk.viewer.qt.conf
+9fccd6439030dd553b63be5a28a2ea73 pptk/viewer/CMakeFiles/pptk.viewer.viewer.py
+f4badf7c99722ff4adfcf1de66ed8998 pptk/viewer/CMakeFiles/viewer_autogen

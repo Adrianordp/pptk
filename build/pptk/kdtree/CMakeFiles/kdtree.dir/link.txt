@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -static-libstdc++ -shared -Wl,-soname,kdtree.so -o kdtree.so CMakeFiles/kdtree.dir/kdtree_wrapper.cpp.o  -ltbb -ltbbmalloc 

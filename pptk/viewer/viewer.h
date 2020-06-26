@@ -30,13 +30,14 @@
 #include "selection_box.h"
 #include "text.h"
 #include "timer.h"
-
-//#define TEST_FINE_RENDER
+#include <QPushButton>
+// #define TEST_FINE_RENDER
 
 class Viewer : public QWindow, protected OpenGLFuncs {
   Q_OBJECT
  public:
   explicit Viewer(quint16 clientPort) : QWindow() {
+    this->setFlags(Qt::FramelessWindowHint);
     setSurfaceType(QSurface::OpenGLSurface);
     create();
 

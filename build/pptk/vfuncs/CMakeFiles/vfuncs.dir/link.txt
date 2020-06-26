@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -static-libstdc++ -shared -Wl,-soname,vfuncs.so -o vfuncs.so CMakeFiles/vfuncs.dir/vfuncs.cpp.o 
