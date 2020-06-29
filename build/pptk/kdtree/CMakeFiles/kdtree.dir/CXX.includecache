@@ -594,55 +594,55 @@ cpython/unicodeobject.h
 
 /usr/include/python3.8/weakrefobject.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/__multiarray_api.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/__multiarray_api.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/_numpyconfig.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/arrayobject.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/arrayobject.h
 ndarrayobject.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ndarrayobject.h
 npy_interrupt.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_interrupt.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_interrupt.h
 noprefix.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/noprefix.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/noprefix.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ndarrayobject.h
 Python.h
 -
 ndarraytypes.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ndarraytypes.h
 __multiarray_api.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/__multiarray_api.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/__multiarray_api.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ndarraytypes.h
 npy_common.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_common.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_common.h
 npy_endian.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_endian.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_endian.h
 npy_cpu.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_cpu.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_cpu.h
 utils.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/utils.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/utils.h
 _neighborhood_iterator_imp.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 npy_1_7_deprecated_api.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/noprefix.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/noprefix.h
 ndarrayobject.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ndarrayobject.h
 npy_interrupt.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_interrupt.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_interrupt.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
 old_defines.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/old_defines.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/old_defines.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_common.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_common.h
 numpyconfig.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/numpyconfig.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/numpyconfig.h
 npy_config.h
 -
 Python.h
@@ -656,31 +656,31 @@ inttypes.h
 limits.h
 -
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_cpu.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_cpu.h
 numpyconfig.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/numpyconfig.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/numpyconfig.h
 string.h
 -
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_endian.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_endian.h
 endian.h
 -
 sys/endian.h
 -
 npy_cpu.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_cpu.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_cpu.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_interrupt.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/npy_interrupt.h
 setjmp.h
 -
 signal.h
 -
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/numpyconfig.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/numpyconfig.h
 _numpyconfig.h
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/_numpyconfig.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/old_defines.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/old_defines.h
 
-/usr/lib/python3/dist-packages/numpy/core/include/numpy/utils.h
+/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/utils.h
 

@@ -9,7 +9,6 @@ pptk.egg-info/requires.txt
 pptk.egg-info/top_level.txt
 pptk/kdtree/__init__.py
 pptk/kdtree/kdtree.so
-pptk/libs/.fuse_hidden0000089600000032
 pptk/libs/libgomp.so.1
 pptk/libs/libz.so.1
 pptk/libs/qt_plugins/platforms/libqxcb.so

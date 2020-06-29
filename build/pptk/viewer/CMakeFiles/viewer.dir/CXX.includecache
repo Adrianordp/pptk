@@ -60,6 +60,22 @@ QTcpSocket
 vector
 -
 
+/media/adriano/git/pptk/pptk/viewer/design.cpp
+design.h
+/media/adriano/git/pptk/pptk/viewer/design.h
+viewer.h
+/media/adriano/git/pptk/pptk/viewer/viewer.h
+
+/media/adriano/git/pptk/pptk/viewer/design.h
+QPushButton
+-
+QLayout
+-
+QTextEdit
+-
+viewer.h
+/media/adriano/git/pptk/pptk/viewer/viewer.h
+
 /media/adriano/git/pptk/pptk/viewer/floor_grid.h
 math.h
 -
@@ -99,6 +115,8 @@ iostream
 -
 viewer.h
 /media/adriano/git/pptk/pptk/viewer/viewer.h
+design.h
+/media/adriano/git/pptk/pptk/viewer/design.h
 QWindow
 -
 QPushButton
@@ -297,6 +315,8 @@ text.h
 /media/adriano/git/pptk/pptk/viewer/text.h
 timer.h
 /media/adriano/git/pptk/pptk/viewer/timer.h
+QPushButton
+-
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

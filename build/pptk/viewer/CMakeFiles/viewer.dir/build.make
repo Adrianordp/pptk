@@ -83,16 +83,31 @@ pptk/viewer/CMakeFiles/viewer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/main.cpp.s"
 	cd /media/adriano/git/pptk/build/pptk/viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/adriano/git/pptk/pptk/viewer/main.cpp -o CMakeFiles/viewer.dir/main.cpp.s
 
+pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o: pptk/viewer/CMakeFiles/viewer.dir/flags.make
+pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o: ../pptk/viewer/design.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o"
+	cd /media/adriano/git/pptk/build/pptk/viewer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/design.cpp.o -c /media/adriano/git/pptk/pptk/viewer/design.cpp
+
+pptk/viewer/CMakeFiles/viewer.dir/design.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/design.cpp.i"
+	cd /media/adriano/git/pptk/build/pptk/viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/adriano/git/pptk/pptk/viewer/design.cpp > CMakeFiles/viewer.dir/design.cpp.i
+
+pptk/viewer/CMakeFiles/viewer.dir/design.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/design.cpp.s"
+	cd /media/adriano/git/pptk/build/pptk/viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/adriano/git/pptk/pptk/viewer/design.cpp -o CMakeFiles/viewer.dir/design.cpp.s
+
 # Object files for target viewer
 viewer_OBJECTS = \
 "CMakeFiles/viewer.dir/viewer_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/viewer.dir/main.cpp.o"
+"CMakeFiles/viewer.dir/main.cpp.o" \
+"CMakeFiles/viewer.dir/design.cpp.o"
 
 # External object files for target viewer
 viewer_EXTERNAL_OBJECTS =
 
 pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/viewer_autogen/mocs_compilation.cpp.o
 pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/main.cpp.o
+pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o
 pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/build.make
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.12.8
@@ -101,7 +116,7 @@ pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable viewer"
 	cd /media/adriano/git/pptk/build/pptk/viewer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/viewer.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying \$$<TARGET_FILE:viewer> to /media/adriano/git/pptk/build/pptk/viewer"
 	cd /media/adriano/git/pptk/build/pptk/viewer && /usr/bin/cmake -E copy_if_different /media/adriano/git/pptk/build/pptk/viewer/viewer /media/adriano/git/pptk/build/pptk/viewer

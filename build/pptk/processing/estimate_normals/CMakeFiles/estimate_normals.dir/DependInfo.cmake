@@ -21,7 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/python3.8"
   "/usr/include/tbb"
-  "/usr/lib/python3/dist-packages/numpy/core/include/numpy"
+  "/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy"
   )
 
 # Targets to which this target links.

@@ -185,6 +185,33 @@ viewer_autogen/fast:
 	cd /media/adriano/git/pptk/build && $(MAKE) -f pptk/viewer/CMakeFiles/viewer_autogen.dir/build.make pptk/viewer/CMakeFiles/viewer_autogen.dir/build
 .PHONY : viewer_autogen/fast
 
+design.o: design.cpp.o
+
+.PHONY : design.o
+
+# target to build an object file
+design.cpp.o:
+	cd /media/adriano/git/pptk/build && $(MAKE) -f pptk/viewer/CMakeFiles/viewer.dir/build.make pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o
+.PHONY : design.cpp.o
+
+design.i: design.cpp.i
+
+.PHONY : design.i
+
+# target to preprocess a source file
+design.cpp.i:
+	cd /media/adriano/git/pptk/build && $(MAKE) -f pptk/viewer/CMakeFiles/viewer.dir/build.make pptk/viewer/CMakeFiles/viewer.dir/design.cpp.i
+.PHONY : design.cpp.i
+
+design.s: design.cpp.s
+
+.PHONY : design.s
+
+# target to generate assembly for a file
+design.cpp.s:
+	cd /media/adriano/git/pptk/build && $(MAKE) -f pptk/viewer/CMakeFiles/viewer.dir/build.make pptk/viewer/CMakeFiles/viewer.dir/design.cpp.s
+.PHONY : design.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -252,6 +279,9 @@ help:
 	@echo "... pptk.viewer.viewer.py"
 	@echo "... viewer"
 	@echo "... viewer_autogen"
+	@echo "... design.o"
+	@echo "... design.i"
+	@echo "... design.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

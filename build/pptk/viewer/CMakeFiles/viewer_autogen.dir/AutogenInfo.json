@@ -33,6 +33,11 @@
 			"EWIEGA46WW/moc_comm_funcs.cpp"
 		],
 		[
+			"/media/adriano/git/pptk/pptk/viewer/design.h",
+			"Mu",
+			"EWIEGA46WW/moc_design.cpp"
+		],
+		[
 			"/media/adriano/git/pptk/pptk/viewer/floor_grid.h",
 			"Mu",
 			"EWIEGA46WW/moc_floor_grid.cpp"
@@ -148,6 +153,7 @@
 	"SETTINGS_FILE" : "/media/adriano/git/pptk/build/pptk/viewer/CMakeFiles/viewer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/media/adriano/git/pptk/pptk/viewer/design.cpp", "Mu" ],
 		[ "/media/adriano/git/pptk/pptk/viewer/main.cpp", "Mu" ]
 	],
 	"VERBOSITY" : 0

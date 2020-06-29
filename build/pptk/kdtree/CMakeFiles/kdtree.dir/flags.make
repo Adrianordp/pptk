@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DUSE_TBB -Dkdtree_EXPORTS
 
-CXX_INCLUDES = -I/media/adriano/git/pptk/pptk/kdtree/../include -I/media/adriano/git/pptk/pptk/kdtree/src -I/usr/include/tbb -I/usr/include/python3.8 -I/usr/lib/python3/dist-packages/numpy/core/include/numpy 
+CXX_INCLUDES = -I/media/adriano/git/pptk/pptk/kdtree/../include -I/media/adriano/git/pptk/pptk/kdtree/src -I/usr/include/tbb -I/usr/include/python3.8 -I/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy 
 

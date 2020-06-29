@@ -803,12 +803,12 @@ pptk/viewer/CMakeFiles/pptk.viewer.viewer.py.dir/clean:
 pptk/viewer/CMakeFiles/viewer.dir/all: pptk/viewer/CMakeFiles/viewer_autogen.dir/all
 	$(MAKE) -f pptk/viewer/CMakeFiles/viewer.dir/build.make pptk/viewer/CMakeFiles/viewer.dir/depend
 	$(MAKE) -f pptk/viewer/CMakeFiles/viewer.dir/build.make pptk/viewer/CMakeFiles/viewer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=26,27,28 "Built target viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=26,27,28,29 "Built target viewer"
 .PHONY : pptk/viewer/CMakeFiles/viewer.dir/all
 
 # Build rule for subdir invocation for target.
 pptk/viewer/CMakeFiles/viewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/adriano/git/pptk/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/adriano/git/pptk/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 pptk/viewer/CMakeFiles/viewer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/adriano/git/pptk/build/CMakeFiles 0
 .PHONY : pptk/viewer/CMakeFiles/viewer.dir/rule
@@ -830,7 +830,7 @@ pptk/viewer/CMakeFiles/viewer.dir/clean:
 pptk/viewer/CMakeFiles/viewer_autogen.dir/all:
 	$(MAKE) -f pptk/viewer/CMakeFiles/viewer_autogen.dir/build.make pptk/viewer/CMakeFiles/viewer_autogen.dir/depend
 	$(MAKE) -f pptk/viewer/CMakeFiles/viewer_autogen.dir/build.make pptk/viewer/CMakeFiles/viewer_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=29 "Built target viewer_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adriano/git/pptk/build/CMakeFiles --progress-num=30 "Built target viewer_autogen"
 .PHONY : pptk/viewer/CMakeFiles/viewer_autogen.dir/all
 
 # Build rule for subdir invocation for target.

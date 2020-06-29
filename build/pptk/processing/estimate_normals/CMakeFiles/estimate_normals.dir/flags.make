@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -fopenmp -std=gnu++11
 
 CXX_DEFINES = -DUSE_TBB -Destimate_normals_EXPORTS
 
-CXX_INCLUDES = -I/media/adriano/git/pptk/pptk/processing/estimate_normals/../../include -I/media/adriano/git/pptk/pptk/processing/estimate_normals/../../kdtree/src -I/usr/include/eigen3 -I/usr/include/python3.8 -I/usr/include/tbb -I/usr/lib/python3/dist-packages/numpy/core/include/numpy 
+CXX_INCLUDES = -I/media/adriano/git/pptk/pptk/processing/estimate_normals/../../include -I/media/adriano/git/pptk/pptk/processing/estimate_normals/../../kdtree/src -I/usr/include/eigen3 -I/usr/include/python3.8 -I/usr/include/tbb -I/usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy 
 

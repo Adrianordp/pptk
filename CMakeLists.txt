@@ -5,7 +5,7 @@ set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_MODULE_PATH
   "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(Numpy_INCLUDE_DIR /usr/lib/python3/dist-packages/numpy/core/include/numpy/ CACHE STRING "" FORCE)
+set(Numpy_INCLUDE_DIR /usr/local/lib/python3.8/dist-packages/numpy/core/include/numpy/ CACHE STRING "" FORCE)
 set(TBB_INCLUDE_DIR /usr/include/tbb CACHE STRING "" FORCE)
 set(TBB_tbb_LIBRARY /usr/lib/x86_64-linux-gnu/libtbb.so CACHE STRING "" FORCE)
 set(TBB_tbb_RUNTIME /usr/lib/x86_64-linux-gnu/libtbb.so CACHE STRING "" FORCE)

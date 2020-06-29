@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/media/adriano/git/pptk/pptk/viewer/design.cpp" "/media/adriano/git/pptk/build/pptk/viewer/CMakeFiles/viewer.dir/design.cpp.o"
   "/media/adriano/git/pptk/pptk/viewer/main.cpp" "/media/adriano/git/pptk/build/pptk/viewer/CMakeFiles/viewer.dir/main.cpp.o"
   "/media/adriano/git/pptk/build/pptk/viewer/viewer_autogen/mocs_compilation.cpp" "/media/adriano/git/pptk/build/pptk/viewer/CMakeFiles/viewer.dir/viewer_autogen/mocs_compilation.cpp.o"
   )
