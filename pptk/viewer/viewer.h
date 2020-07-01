@@ -31,11 +31,11 @@
 #include "text.h"
 #include "timer.h"
 #include <QPushButton>
-// #define TEST_FINE_RENDER
 
 class Viewer : public QWindow, protected OpenGLFuncs {
   Q_OBJECT
  public:
+    quint16 serverPort;
   explicit Viewer(quint16 clientPort) : QWindow() {
     this->setFlags(Qt::FramelessWindowHint);
     setSurfaceType(QSurface::OpenGLSurface);
@@ -81,7 +81,8 @@ class Viewer : public QWindow, protected OpenGLFuncs {
     connect(_server, SIGNAL(newConnection()), this, SLOT(reply()));
     qDebug() << "Vizualizador: servidor TCP configurado na porta " << _server->serverPort();
 
-    quint16 serverPort = _server->serverPort();
+    serverPort = _server->serverPort();
+//    quint16 serverPort = _server->serverPort();
     fwrite(&serverPort, sizeof(quint16), 1, stdout);
     fflush(stdout);
 

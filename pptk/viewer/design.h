@@ -4,13 +4,26 @@
 #include <QLayout>
 #include <QTextEdit>
 #include <QDebug>
+#include <string>
+#include <stdlib.h>
 #include "viewer.h"
+
+//#ifdef _WIN32
+//#include <Windows.h>
+//#else
+//#include <unistd.h>
+//#endif
+
+#pragma push_macro("slots")
+#undef slots
+#include "Python.h"
+#pragma pop_macro("slots")
 
 class Design : public QObject
 {
     Q_OBJECT
 public:
-    Design(int);
+    Design(int,quint16);
     QPushButton *button        = new QPushButton("New");
     QLayout     *layout        = new QGridLayout();
     QGridLayout *lay           = new QGridLayout();
@@ -23,6 +36,7 @@ public:
     QPushButton *buttonClose   = new QPushButton("Fechar");
     QTextEdit   *dialogBox     = new QTextEdit("Área de informações");
     QWidget     *win           = new QWidget();
+    quint16 portNumber;
 
 private slots:
     void on_buttonLoad_clicked();

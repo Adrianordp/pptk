@@ -1,0 +1,81 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"copy_file",
+			"copy_file_with_dependencies"
+		],
+		"files" : 
+		[
+			"cmake/UsefulMacros.cmake",
+			"pptk/libs/qt_plugins/platforms/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 2
+			}
+		]
+	},
+	"id" : "pptk.libs.qt_plugins.platforms.libqxcb.so::@8d291449dba65110bad0",
+	"name" : "pptk.libs.qt_plugins.platforms.libqxcb.so",
+	"paths" : 
+	{
+		"build" : "pptk/libs/qt_plugins/platforms",
+		"source" : "pptk/libs/qt_plugins/platforms"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/pptk/libs/qt_plugins/platforms/CMakeFiles/pptk.libs.qt_plugins.platforms.libqxcb.so",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/pptk/libs/qt_plugins/platforms/CMakeFiles/pptk.libs.qt_plugins.platforms.libqxcb.so.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

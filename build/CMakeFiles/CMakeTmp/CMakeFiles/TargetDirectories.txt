@@ -1,0 +1,3 @@
+/media/adriano/git/pptk/build/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
+/media/adriano/git/pptk/build/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
+/media/adriano/git/pptk/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_095f8.dir

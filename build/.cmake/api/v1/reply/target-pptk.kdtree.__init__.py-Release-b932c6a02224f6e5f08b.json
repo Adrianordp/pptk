@@ -1,0 +1,74 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"copy_file"
+		],
+		"files" : 
+		[
+			"cmake/UsefulMacros.cmake",
+			"pptk/kdtree/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "pptk.kdtree.__init__.py::@61a3ad15b1b0e7ea18c5",
+	"name" : "pptk.kdtree.__init__.py",
+	"paths" : 
+	{
+		"build" : "pptk/kdtree",
+		"source" : "pptk/kdtree"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/pptk/kdtree/CMakeFiles/pptk.kdtree.__init__.py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/pptk/kdtree/CMakeFiles/pptk.kdtree.__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

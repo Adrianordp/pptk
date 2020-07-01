@@ -17,18 +17,21 @@
 #include <unistd.h>
 #endif
 
-int main(int argc, char* argv[]) {
-  if (argc != 2) {
-    qDebug() << "usage: viewer <port number>";
-    return 1;
-  }
-  QApplication a(argc, argv);
-  unsigned short clientPort = (unsigned short)atoi(argv[1]);
-  Viewer viewer(clientPort);
-  viewer.create();
-  viewer.show();
-  usleep(5000);
+int main(int argc, char* argv[])
+{
+    if (argc != 2)
+    {
+        qDebug() << "usage: viewer <port number>";
+        return 1;
+    }
+    QApplication a(argc, argv);
+    unsigned short clientPort = (unsigned short)atoi(argv[1]);
+    qDebug() << clientPort;
+    Viewer viewer(clientPort);
+    viewer.create();
+    viewer.show();
+    usleep(5000);
+    Design design(viewer.winId(),viewer.serverPort);
 
-  Design design(viewer.winId());
-  return a.exec();
+    return a.exec();
 }

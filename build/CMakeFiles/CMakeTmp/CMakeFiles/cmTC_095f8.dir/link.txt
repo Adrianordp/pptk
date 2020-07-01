@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fopenmp    -rdynamic CMakeFiles/cmTC_095f8.dir/OpenMPCheckVersion.c.o  -o cmTC_095f8 

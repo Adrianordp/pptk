@@ -1,21 +1,16 @@
 #include "design.h"
-#include "viewer.h"
-#include <string>
-
-//#ifdef _WIN32
-//#include <Windows.h>
-//#else
-//#include <unistd.h>
-//#endif
+#include <stdio.h>
+#include <stdlib.h>
 using namespace std;
 
-Design::Design(int winId)
+Design::Design(int winId, quint16 portNumber)
 {
-    buttonVolume->setEnabled(false);
+    this->portNumber = portNumber;
+    buttonVolume->setEnabled(false) ;
     buttonConfirm->setEnabled(false);
-    buttonSave->setEnabled(false);
-    buttonUndo->setEnabled(false);
-    buttonRedo->setEnabled(false);
+    buttonSave->setEnabled(false)   ;
+    buttonUndo->setEnabled(false)   ;
+    buttonRedo->setEnabled(false)   ;
 
     buttonLoad->show()               ;
     lay->setColumnStretch(1,3)       ;
@@ -28,20 +23,20 @@ Design::Design(int winId)
     lay->addWidget(buttonClose,6,0)  ;
     lay->addWidget(dialogBox,7,0)    ;
 
-    QWindow *container     = QWindow::fromWinId(winId);
+    QWindow *container     = QWindow::fromWinId(winId)                ;
     QWidget *program_start = QWidget::createWindowContainer(container);
-    lay->addWidget(program_start,0,1,8,5);
+    lay->addWidget(program_start,0,1,8,5)                             ;
     program_start->show();
-    win->setLayout(lay);
-    win->resize(800,500);
-    win->show();
-    connect(buttonLoad,SIGNAL(clicked()),this,SLOT(on_buttonLoad_clicked()));
+    win->setLayout(lay)  ;
+    win->resize(800,500) ;
+    win->show()          ;
+    connect(buttonLoad   ,SIGNAL(clicked()),this,SLOT(on_buttonLoad_clicked()   ));
     connect(buttonConfirm,SIGNAL(clicked()),this,SLOT(on_buttonConfirm_clicked()));
-    connect(buttonVolume,SIGNAL(clicked()),this,SLOT(on_buttonVolume_clicked()));
-    connect(buttonSave,SIGNAL(clicked()),this,SLOT(on_buttonSave_clicked()));
-    connect(buttonUndo,SIGNAL(clicked()),this,SLOT(on_buttonUndo_clicked()));
-    connect(buttonRedo,SIGNAL(clicked()),this,SLOT(on_buttonRedo_clicked()));
-    connect(buttonClose,SIGNAL(clicked()),this,SLOT(on_buttonClose_clicked()));
+    connect(buttonVolume ,SIGNAL(clicked()),this,SLOT(on_buttonVolume_clicked() ));
+    connect(buttonSave   ,SIGNAL(clicked()),this,SLOT(on_buttonSave_clicked()   ));
+    connect(buttonUndo   ,SIGNAL(clicked()),this,SLOT(on_buttonUndo_clicked()   ));
+    connect(buttonRedo   ,SIGNAL(clicked()),this,SLOT(on_buttonRedo_clicked()   ));
+    connect(buttonClose  ,SIGNAL(clicked()),this,SLOT(on_buttonClose_clicked()  ));
 }
 
 void Design::on_buttonLoad_clicked(){
@@ -66,6 +61,17 @@ void Design::on_buttonLoad_clicked(){
     // Load point cloud to ppt viewer referencing z axis colors
     buttonConfirm->setEnabled(true);
     buttonVolume->setEnabled(true);
+
+//    int portNumber = 12321;
+    char command[100];
+    char buffer[10];
+    snprintf(buffer, sizeof(buffer), "%d", this->portNumber);
+    strcpy(command,"python3 mypy.py ");
+    strcat(command,buffer);
+    int systemReturn = system(command);
+    if (systemReturn == -1){
+        qDebug("Erro");
+    }
 }
 
 void Design::on_buttonConfirm_clicked(){
