@@ -12,6 +12,7 @@
 /media/adriano/git/pptk/pptk/viewer/camera.h
 /media/adriano/git/pptk/pptk/viewer/comm_funcs.h
 /media/adriano/git/pptk/pptk/viewer/design.h
+ mmc:Q_OBJECT
 /media/adriano/git/pptk/pptk/viewer/look_at.h
 /media/adriano/git/pptk/pptk/viewer/octree.h
 /media/adriano/git/pptk/pptk/viewer/main.cpp

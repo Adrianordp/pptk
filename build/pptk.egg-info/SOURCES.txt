@@ -23,6 +23,7 @@ pptk/processing/estimate_normals/estimate_normals.so
 pptk/vfuncs/__init__.py
 pptk/vfuncs/vfuncs.so
 pptk/viewer/__init__.py
+pptk/viewer/mypy.py
 pptk/viewer/qt.conf
 pptk/viewer/viewer
 pptk/viewer/viewer.py

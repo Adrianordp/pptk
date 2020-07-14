@@ -19,14 +19,15 @@
 
 int main(int argc, char* argv[])
 {
-    if (argc != 2)
-    {
-        qDebug() << "usage: viewer <port number>";
-        return 1;
-    }
+//    if (argc != 2)
+//    {
+//        qDebug() << "usage: viewer <port number>";
+//        return 1;
+//    }
     QApplication a(argc, argv);
-    unsigned short clientPort = (unsigned short)atoi(argv[1]);
-    qDebug() << clientPort;
+//    unsigned short clientPort = (unsigned short)atoi(argv[1]);
+    unsigned short clientPort = 12345;
+
     Viewer viewer(clientPort);
     viewer.create();
     viewer.show();

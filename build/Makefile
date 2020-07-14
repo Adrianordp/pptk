@@ -306,6 +306,19 @@ pptk.viewer.qt.conf/fast:
 .PHONY : pptk.viewer.qt.conf/fast
 
 #=============================================================================
+# Target rules for targets named pptk.viewer.mypy.py
+
+# Build rule for target.
+pptk.viewer.mypy.py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pptk.viewer.mypy.py
+.PHONY : pptk.viewer.mypy.py
+
+# fast build rule for target.
+pptk.viewer.mypy.py/fast:
+	$(MAKE) -f pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/build.make pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/build
+.PHONY : pptk.viewer.mypy.py/fast
+
+#=============================================================================
 # Target rules for targets named pptk.viewer.__init__.py
 
 # Build rule for target.
@@ -445,6 +458,7 @@ help:
 	@echo "... pptk.vfuncs.__init__.py"
 	@echo "... vfuncs"
 	@echo "... pptk.viewer.qt.conf"
+	@echo "... pptk.viewer.mypy.py"
 	@echo "... pptk.viewer.__init__.py"
 	@echo "... pptk.viewer.viewer.py"
 	@echo "... viewer"

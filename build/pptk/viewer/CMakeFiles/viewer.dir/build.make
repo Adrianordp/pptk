@@ -112,6 +112,7 @@ pptk/viewer/viewer: pptk/viewer/CMakeFiles/viewer.dir/build.make
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libGL.so
+pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 pptk/viewer/viewer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8

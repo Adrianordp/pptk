@@ -126,6 +126,21 @@ pptk.viewer.qt.conf/fast:
 .PHONY : pptk.viewer.qt.conf/fast
 
 # Convenience name for target.
+pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/rule:
+	cd /media/adriano/git/pptk/build && $(MAKE) -f CMakeFiles/Makefile2 pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/rule
+.PHONY : pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/rule
+
+# Convenience name for target.
+pptk.viewer.mypy.py: pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/rule
+
+.PHONY : pptk.viewer.mypy.py
+
+# fast build rule for target.
+pptk.viewer.mypy.py/fast:
+	cd /media/adriano/git/pptk/build && $(MAKE) -f pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/build.make pptk/viewer/CMakeFiles/pptk.viewer.mypy.py.dir/build
+.PHONY : pptk.viewer.mypy.py/fast
+
+# Convenience name for target.
 pptk/viewer/CMakeFiles/pptk.viewer.__init__.py.dir/rule:
 	cd /media/adriano/git/pptk/build && $(MAKE) -f CMakeFiles/Makefile2 pptk/viewer/CMakeFiles/pptk.viewer.__init__.py.dir/rule
 .PHONY : pptk/viewer/CMakeFiles/pptk.viewer.__init__.py.dir/rule
@@ -274,6 +289,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... pptk.viewer.qt.conf"
+	@echo "... pptk.viewer.mypy.py"
 	@echo "... rebuild_cache"
 	@echo "... pptk.viewer.__init__.py"
 	@echo "... pptk.viewer.viewer.py"
